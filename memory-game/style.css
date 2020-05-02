@@ -1,6 +1,45 @@
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 400px;
-  height: 300px;
+:root {
+    --btn-yellow: rgb(119, 119, 13);
+}
+
+body {
+    background-color: #eee;
+}
+
+header .title {
+    color: var(--btn-yellow);
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+header .options {
+    align-items: center;
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-between;
+    padding: 0 20px 60px;
+}
+
+header .options #result,
+header .options button {
+    color: var(--btn-yellow);
+}
+
+header .options button {
+    background-color: #eee;
+    border: 2px solid var(--btn-yellow);
+    font-size: 3rem;
+    padding: 15px 30px;
+}
+
+.board {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+}
+
+.board img {
+    justify-self: stretch;
+    height: 300px;
 }
